@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Covid-19</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400;600;900|Ubuntu&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <script src="https://kit.fontawesome.com/37a6f26c10.js" crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    </head>
+
+    <body>
+
+       
+
+        <!-- Nav Bar -->
+         <section id="navbar">
+            <div class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href=" "><img src="image/virus.png" alt="virus"> Covid-19</a>
+                <img src="image/bgVirus.png" alt="virus-img" class="virus-top-left">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-items">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link" href="#cases">Cases</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link" href="#symptoms">Symptoms</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link" href="#news">News</a>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+
+
+
+        <!-- Title -->
+        <section id="hero">
+
+
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="hero-heading" style=" font: Ubuntu">Corona-virus</h1>
+                    <h4 class="hero-text">Coronavirus disease (COVID-19) is an infectious disease caused by a new virus.
+                        The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and
+                        in more severe cases, difficulty breathing.</h4>
+                    <button type="button" class="btn btn-danger btn-lg news">Get Latest News</button>
+
+                    <img src="image/bgVirus.png" alt="virus-img" class="virus-right">
+
+
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="image/virus.png" alt="virus" class="mini-virus-left">
+                    <img class="title-image" src="image/hero.png" alt="hero">
+                    <img src="image/virus.png" alt="virus" class="mini-virus-middle">
+                    <img src="image/virus.png" alt="virus" class="mini-virus-right">
+
+                </div>
+            </div>
+            </div>
+            </section>
+            <section id="#cases">
+        <h1>Covid-19 Cases in India</h1>
+        <div class="container-fluid">
+           
+
+                <div id="districtInput">
+            <div id="statesDropdown">
+                <select name="states" id="states">
+
+                </select>
+            </div>
+            <br>
+            <div id="districtsDropdown">
+
+            </div>
+            <!-- <div id="error"></div> -->
+            </div>
+            </div>
+            
+            </section>
+            <p id="loading">Loading...</p>
+            <section id="output" >
+               
+                    <div class="card  text-white bg-danger mb-3" id="card" style="max-width: 18rem;">
+                 <div class="card-header"><h1 id="header"></h1></div>
+                <div class="card-body">
+                <h5 class="card-title">Active:<p id="m1"></p></h5>
+                <h5 class="card-title">New Cases:<p id="m2"></p></h5>
+                <h5 class="card-title">Today Recovered:<p id="m3"></p></h5>
+                <h5 class="card-title">Today deaths:<p id="m4"></p></h5>
+                <h5 class="card-title">Total Recovered:<p id="m5"></p></h5>
+                <h5 class="card-title">Total Deaths:<p id="m6"></p></h5>
+
+            
+                </div>
+                </div>
+                
+            </section>
+<section id="symptoms">
+    <div class="container-fluid">
+
+
+        <div class="row">
+            <div class="col-lg-4 col-xs-6">
+                <img class="doctor img-fluid" src="image/doctor-woman.svg" alt="doctor-woman">
+
+            </div>
+            <div class="col-lg-8 col-xs-6">
+                <h1 class="symptoms-heading">What are Symptoms?</h1>
+                <h4 class="symptoms-text">COVID-19 symptoms range from mild to severe. It takes 2-14 days
+                    after exposure for symptoms to develop. Symptoms may include:</h4>
+                <img src="image/symptoms.png" alt="symptoms" class="sick-woman img-fluid">
+            </div>
+
+
+
+        </div>
+    </div>
+
+</section>
+<section id="news">
+    <h1 class="news-heading">Latest Update About Corona Virus</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="image/virus.png" class="image-fluid" alt="virus">
+                <p>COVID-19 symptoms range from mild to severe. It takes 2-14 days after exposure for
+                    symptoms to develop.</p>
+                <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" target="_blank" class="btn btn-lg btn-danger">Read More</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <p>© Copyright 2021 YashGehi</p>
+    </div>
+  </footer>
+
+<script src="/index.js"></script>
+</body>
+
+</html>
