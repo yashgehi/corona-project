@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    margin: 2rem 4rem;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+#hero {
+    margin: 2.5rem 6rem;
+    line-height: 7rem;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat-Bold";
+
+}
+.card-1 {
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    margin: auto;
+}
+/* rotation */
+    {
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+a.navbar-brand {
+    font-size: 2rem;
+
+}
+
+.navbar-nav {
+    margin-right: 3rem;
+}
+
+.nav-items {
+    padding: 0.7rem;
+}
+
+.nav-link:hover {
+    background-color: var(--red);
+    color: #fff !important;
+}
+
+.nav-link {
+    color: var(--black) !important;
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+}
+
+.hero-text {
+    padding-bottom: 3rem;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #6C7083;
+}
+
+
+.news {
+    border-radius: 20px;
+}
+
+.virus-top-left {
+    position: absolute;
+    z-index: -1;
+    left: -10%;
+}
+
+.virus-right {
+    position: absolute;
+    right: 0;
+}
+
+.mini-virus-left {
+    position: absolute;
+    animation: rotation 10s infinite linear;
+}
+
+.mini-virus-middle {
+    position: absolute;
+    width: 10%;
+    top: 0;
+    right: 25%;
+    animation: rotation 30s infinite linear;
+}
+
+.mini-virus-right {
+    position: absolute;
+    width: 10%;
+    right: 0;
+    bottom: 25%;
+    animation: rotation 20s infinite linear;
+}
+
+#cases {
+    text-align: center;
+    justify-content: center;
+}
+
+#symptoms {
+
+    margin: 5rem 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #f0f2fa;
+}
+
+/* Symptoms Section */
+.sick-woman {
+    width: 70%;
+    margin-right: 15%;
+}
+
+.symptoms-text {
+    color: var(--grey);
+    font-family: sans-serif;
+    padding-right: 50%;
+    line-height: 30px;
+    font-size: 20px;
+}
+.white-section{
+    text-align:center;
+    padding-top: 3rem;
+}
+
+/* News Section */
+#news {
+    text-align: center;
+    background-color: #fff;
+}
+
+.news-heading {
+    padding-top: 3%;
+
+}
+
+.news {
+    margin-bottom: 5%;
+}
+
+.news-title {
+
+    font-size: 1.5rem;
+    margin-top: 3%;
+}
+
+.read-more {
+    color: var(--red) !important;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.read-more:hover {
+    text-decoration: none;
+    border: 1px solid;
+    background-color: var(--red);
+    color: #fff !important;
+}
+
+.news>span {
+    font-size: 2rem;
+    padding: 10px;
+}
+#output{
+    
+        display: flex;
+        display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        color: white;
+    
+}
+
+/* ========Media Queries============ */
+@media screen and (max-width: 1200px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-item {
+        font-size: 1.5rem;
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    img[alt="woman-doctor"] {
+        height: 80%
+    }
+
+}
+
+/* Media Queries for 991px below */
+@media screen and (max-width: 991px) {
+    .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .mini-virus-left {
+        height: 20%;
+    }
+
+
+    .btn-danger {
+        margin-bottom: 20%;
+    }
+
+    #hero {
+        text-align: center;
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    #symptoms {
+        text-align: center;
+    }
+
+    .symptoms-text {
+        padding: 20px;
+    }
+
+    img[alt="woman-doctor"] {
+        display: none;
+    }
+
+    .sick-woman {
+        width: 100%;
+        margin-left: 0px;
+        ;
+    }
+
+    .news-heading {
+        padding: 10%;
+    }
+
+    .navbar-toggler-icon {
+        width: 1em;
+        height: 1em;
+    }
+
+}
+
+/* Media Queries for 582px below */
+@media screen and (max-width: 582px) {
+    .navbar-brand {
+        font-size: .6rem;
+    }
+
+    .navbar-brand img {
+        padding-right: 0px;
+        width: 20%;
+    }
+
+    .navbar-toggler-icon {
+        width: .6em;
+        height: .6em;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .hero-heading {
+        font-size: 2rem;
+    }
+}
